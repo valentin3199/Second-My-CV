@@ -101,5 +101,8 @@
     "jstransformer-markdown-it": "^2.0.0",
     "merge-stream": "^1.0.1",
     "minimist": "^1.2.0"
+  },
+  "dependencies": {
+    "del": "^4.1.1"
   }
 }

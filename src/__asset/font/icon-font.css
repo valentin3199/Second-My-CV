@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'second-my';
+  src:
+    url('fonts/second-my.ttf?721uje') format('truetype'),
+    url('fonts/second-my.woff?721uje') format('woff'),
+    url('fonts/second-my.svg?721uje#second-my') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="second-my__icon--"], [class*=" second-my__icon--"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'second-my' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.second-my__icon--qrcode:before {
+  content: "\e938";
+}
+.second-my__icon--airplane:before {
+  content: "\e9af";
+}
+.second-my__icon--instagram:before {
+  content: "\ea92";
+}
+.second-my__icon--whatsapp:before {
+  content: "\ea93";
+}
+.second-my__icon--youtube2:before {
+  content: "\ea9e";
+}
+.second-my__icon--html-five2:before {
+  content: "\eae5";
+}
+.second-my__icon--css3:before {
+  content: "\eae6";
+}
+.second-my__icon--IcoMoon:before {
+  content: "\eaea";
+}
