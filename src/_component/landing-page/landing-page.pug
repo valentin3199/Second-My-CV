@@ -1,1 +1,48 @@
-h1  ana are mere
+-
+    var Myname= 'Laura Badea Elena'
+    var myJobtitle = 'SportDirect'
+    var socialList= [
+    {
+    .second-my__icon--qrcode:before 
+    content: "\e938";
+    },
+    {
+    .second-my__icon--airplane:before 
+    content: "\e9af";
+    },
+    {
+    .second-my__icon--instagram:before 
+    content: "\ea92";
+    },
+    {
+    .second-my__icon--whatsapp:before 
+    content: "\ea93";
+    },
+    {
+    .second-my__icon--youtube2:before 
+    content: "\ea9e";
+    },
+    {
+    .second-my__icon--html-five2:before 
+    content: "\eae5";
+    },
+    {
+    .second-my__icon--css3:before 
+    content: "\eae6";
+    },
+    {
+    .second-my__icon--IcoMoon:before 
+    content: "\eaea";
+    },
+]
+
+#landing-page
+.landing-page
+  .landing-page__wrapper
+    h1.landing-page__name=Myname
+    h2.landing-page__jobtitle=myJobtitle
+    ul.landing-page__social
+      each social in socialList
+      li.landing-page__item
+        label.landing-page__label(for="")
+          span(class=`second-my__icon--${social.icon}`)
