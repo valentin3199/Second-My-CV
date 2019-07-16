@@ -13,7 +13,17 @@
     h1.landing-page__name=Myname
     h2.landing-page__jobtitle=myJobtitle
     ul.landing-page__social
-      each social in socialList
+      each social,key in socialList
         li.landing-page__item
-          label.landing-page__label(for="")
+          label.landing-page__label(for=`message-box-id-${key}`)
             span(class=`second-my__icon--${social.icon}`)
+    .landing-page__box-body
+      input.landing-page__box-radio(type="radio", name="awesome-radio", checked, id="default-message-radio")
+      .landing-page__box-message Click the above icons to reveal
+      .landing-page__box-header
+        .landing-page__box-info Clock to visit
+        label.landing-page__box-close(for="defalut-message-radio") &times;
+      each social,key in socialList
+        input.landing-page__box-radio(type="radio", name="awesome-radio",id=`message-box-id-${key}`)
+        .landing-page__box-message
+          a.landing-page__box-link(href=social.url,target="_blank")=social.url

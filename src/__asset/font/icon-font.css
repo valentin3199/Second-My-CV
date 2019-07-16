@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'second-my';
   src:
-    url('fonts/second-my.ttf?721uje') format('truetype'),
-    url('fonts/second-my.woff?721uje') format('woff'),
-    url('fonts/second-my.svg?721uje#second-my') format('svg');
+    url('asset/font/second-my.ttf?721uje') format('truetype'),
+    url('asset/font/second-my.woff?721uje') format('woff'),
+    url('asset/font/second-my.svg?721uje#second-my') format('svg');
   font-weight: normal;
   font-style: normal;
 }
