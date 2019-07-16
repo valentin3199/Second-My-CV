@@ -14,3 +14,77 @@
     font-size: 5rem;
     text-transform: uppercase;
   }
+  .landing-page__jobtitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  .landing-page__social{
+    display: flex;
+    margin-top: 3rem;
+    justify-content:center;
+  }
+  .landing-page_-label {
+    color: white;
+    padding: 0.1rem 0.3rem;
+    font-size: 2rem;
+  }
+  .landing-page__bo-radio:checked +
+  .landing-page__box-message {
+    display:inherit;
+  }
+ 
+  .landing-page__bx-radio,
+  .landing-page__box-message{
+    display:none;}
+
+  #defalut-message-radio:cheked +
+  .landing-page__box-message +
+  .landing-page__box-header {
+    diplsay: none;
+  }
+  .landing-page__box-body {
+    display: inline-block;
+    border: 0.2 solid white;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    position: relative;
+  }
+
+  .landing-page__box-header {
+    position: absolute;
+    left: 10%;
+    right:10%;
+    top: 100%;
+    display: flex;
+    justify-content:space-between;
+  }
+  .landing-page__box-info,
+  .landing-page__box-close {
+    background: white;
+    padding: 0.4rem;
+    white-space: nowrap;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .landing-page__box-info {
+    border-bottom-left-radius: 0.5rem;
+    flex-grow: 1;
+  }
+  .landing-page__box-close{
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    width: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .landing-page__box-link,
+  .landing-page__box-link:visited {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow:  ellipsis;
+    max-width: 80vmin;
+  }
+  
