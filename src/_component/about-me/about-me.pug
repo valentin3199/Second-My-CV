@@ -1,5 +1,37 @@
-//-data come here
-
-//-the viw comes here
+-
+  var myFullName = 'Laura Elena'
+  var myTitle = 'Sport Direct'
+  var header = '#about me'
+  var imgPath = 'asset/image/laura.jpg'
+  //- var slogan = `I translate geek into English and I'm a problem solver driven by challenge. Work is my passion and I focus on innovation and design for the future.`
+  var slogan = `I am ....`
+  var achievement = {
+    title: 'achievement',
+    content: `I became a .`
+  }
+  var coolStuff = {
+    title: 'grab cool stuff',
+    linkList: [
+      {
+        url: "https://github.com/valentin3199",
+        icon: "github",
+        text: "Click to visit the GitHub project source"
+      }
+    ]
+  }
 #about-me
 .about-me
+  .about-me__header=header
+  .about-me__avatar-wrapper
+    img.about-me__avatar(src=imgPath)
+  .about-me__full-name=myFullName
+  .about-me__title=myTitle
+  p.about-me__description=slogan
+  .about-me__title=achievement.title
+  p.about-me__description=achievement.content
+  .about-me__title=coolStuff.title
+  .about-me__link-list
+    each link in coolStuff.linkList
+      a.about-me__link(href=link.url)
+        span.about-me__link-description=link.text
+        span(class=`my-cv__icon--${link.icon}`)
